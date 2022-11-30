@@ -1,0 +1,282 @@
+* {
+    /* border: 1px solid red; */
+    font-family: 'roboto';
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.landing-page-area-one {
+    height: 300px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+.shows-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 200px;
+    padding-right: 280px;
+    width: 600px;
+}
+
+.shows-tile {
+    /* width: 100%; */
+}
+
+
+.details {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 25px;
+    width: 250px;
+    font-size: small;
+}
+
+.read-more {
+    padding: 2%;
+    padding-top: 60px;
+}
+
+button {
+    width: 125px; 
+    height: 35px;
+    font-size: large;
+    color: white;
+    background-color: rgb(255, 187, 0);
+    border-width: thin;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+.nabar-item {
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(99, 151, 241);
+}
+
+.background {
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+    background-position: center 120px;
+    height: 40%;
+}
+
+.showfeats {
+    /* on top of everything but will scroll (fixed) */
+    z-index: 1;
+    height: 15em;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 2em;
+    text-shadow: -1px 1px 2px black,
+                1px 1px 0 black,
+                1px -1px 0 black,
+                -1px -1px 0 black;
+    height: 400px;
+}
+
+.show-header {
+    background-color: black;
+    color: rgba(0, 0, 0, 0.825);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    /* turns background of 'Our Artists from clear to black top to bottom */
+    /* the 40% starts at the top */
+    background: linear-gradient(to bottom, rgb(255,255,255,0) 0%, rgb(255, 255, 255) 60%);
+    /* bumps 'our artists' down to the bottom of the box */
+    display: flex;
+    height: 35px;
+    width: 100%;
+}
+
+h2 {
+    padding-top: 70px;
+    text-decoration: underline;
+    text-shadow: darkgray;
+    color: rgba(0, 0, 0, 0.919);
+}
+
+.main-tile-dimension {
+       width: 100%;
+       height: 100%;
+       background-color: white;
+       color: black;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-bottom: 20px;
+}
+
+.img {
+    /* display: inline-block; */
+    width:150px;
+    height: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.lines {
+    width: 50px;
+    height: 45px;
+    justify-content: center;
+    content: '';
+    margin: auto;
+    height: 1px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.shows {
+    align-items: center; */
+    margin: auto;
+    width: 50%;
+
+}
+
+/* .local-shows {
+    color: white;
+    margin-top: 5%;
+} */
+
+.concert-container {
+    /* give semi-dark background but can still see image of concert */
+    background-color: rgba(0,0,0,0.5);
+    padding: 5%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    /* spaces items in grid 3 wide by 350px per gap */
+    grid-template-columns: 350px 350px 350px;
+    grid-gap: 60px;
+}
+
+.box {
+    max-width: 300px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.grid-image {
+    object-fit: cover;
+    max-width: 300px;
+    height: auto;
+}
+
+.grid-text {
+    text-align: center;
+}
+
+footer {
+    margin-bottom: 0px;
+}
+
+.bottom {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.map {
+    width: 200px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.mapimg {
+    width: 250px;
+}
+
+.footinfo, .footshows, .social, .foothead, .map {
+    display: flex;
+    flex-direction: column;
+    font: 0.6em;
+}
+
+.footinfo, .footshows, .social, .foothead {
+    padding-bottom: 40px;
+}
+
+.foothead {
+    font-size: 2em;
+}
+
+.tiny, .email, .phone, .location {
+    margin: 3px;
+    padding-top: 3px;
+    padding-bottom: 15px;
+}
